@@ -1,0 +1,132 @@
+/* Vaelix Health — minimal mobile-first stylesheet */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #fafafa;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  max-width: 560px;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.tagline {
+  color: #666;
+  font-size: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section.intro p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+section.contact p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+section.prose p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.back {
+  margin-top: 2.5rem;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #999;
+}
+
+a:hover {
+  text-decoration-color: #1a1a1a;
+}
+
+strong {
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0a0a0a;
+    color: #f0f0f0;
+  }
+  .tagline,
+  footer,
+  section.prose p,
+  section.intro p,
+  section.contact p {
+    color: #c0c0c0;
+  }
+  a {
+    color: #f0f0f0;
+    text-decoration-color: #666;
+  }
+  a:hover {
+    text-decoration-color: #f0f0f0;
+  }
+  footer {
+    border-top-color: #2a2a2a;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  body {
+    padding: 1.5rem 1rem;
+  }
+}
