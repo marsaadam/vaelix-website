@@ -19,13 +19,13 @@ body {
   color: #1a1a1a;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1.5rem 3rem;
 }
 
 main {
-  max-width: 560px;
+  max-width: 620px;
   width: 100%;
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
@@ -43,8 +43,9 @@ h1 {
 h2 {
   font-size: 1.125rem;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
 }
 
 .tagline {
@@ -53,12 +54,32 @@ h2 {
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 section.intro p {
   margin-bottom: 1rem;
   color: #333;
+}
+
+section.pillars ul {
+  list-style: none;
+  padding: 0;
+}
+
+section.pillars li {
+  padding: 0.875rem 0;
+  border-top: 1px solid #e5e5e5;
+  color: #333;
+}
+
+section.pillars li:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+section.pillars strong {
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
 section.contact p {
@@ -103,12 +124,23 @@ footer {
     background: #0a0a0a;
     color: #f0f0f0;
   }
+  h1, h2 {
+    color: #f0f0f0;
+  }
   .tagline,
   footer,
   section.prose p,
   section.intro p,
-  section.contact p {
+  section.contact p,
+  section.pillars li {
     color: #c0c0c0;
+  }
+  section.pillars strong {
+    color: #f0f0f0;
+  }
+  section.pillars li,
+  section.pillars li:last-child {
+    border-color: #2a2a2a;
   }
   a {
     color: #f0f0f0;
@@ -124,9 +156,9 @@ footer {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
   body {
-    padding: 1.5rem 1rem;
+    padding: 2.5rem 1.25rem 2rem;
   }
 }
